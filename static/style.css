@@ -1,0 +1,35 @@
+.fun-box {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.fun-box:hover {
+    transform: scale(1.1);
+}
+@keyframes pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+.animate-pop {
+    animation: pop 1s ease-out;
+}
+.text-center {
+    text-align: center;
+}
+.mt-5 {
+    margin-top: 50px;
+}
+body.home-page {
+    background-color: rgb(129, 223, 156);
+    color: black;
+}
+body.games-page {
+    background-color: rgb(129, 223, 156);
+    color: black;
+}
+body.music-page {
+    background-color: rgb(129, 223, 156);
+    color: black;
+}
+body.videos-page {
+    background-color: rgb(129, 223, 156);
+}
