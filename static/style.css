@@ -1,3 +1,94 @@
+
+/* General Background Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* Homepage Background */
+.homepage {
+    background-color: rgb(65, 133, 155) !important;
+}
+/* Games Page Background */
+.games-page {
+    background-color: lightpink !important;
+}
+/* Music Page Background */
+.music-page {
+    background-color: #b31777 !important;
+}
+/* Videos Page Background */
+.videos-page {
+    background-color: #5983a2 !important;
+}
+/* Homepage Heading and Explore Text */
+.my-special-title {
+    color: #2ff0e0;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.explore-text {
+    font-weight: bold;
+    color: #073d47;
+    margin-bottom: 30px;
+}
+/* Homepage Button Styles */
+.homepage .btn-success {
+    background-color: #41d19a;
+    border-color: #105e21;
+    color: #fff;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.homepage .btn-success:hover,.homepage .btn-success:focus {
+    background-color: #2bbf7e;
+    border-color: #0f3b25;
+    color: #fff;
+    transform: scale(1.06);
+}
+.homepage .btn-info {
+    background-color: #2ff0e0;
+    border-color: #0e7f7a;
+    color: #073d47;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.homepage .btn-info:hover,
+.homepage .btn-info:focus {
+    background-color: #1bc9b4;
+    border-color: #0e7f7a;
+    color: #fff;
+    transform: scale(1.06);
+}
+.homepage .btn-warning {
+    background-color: #f6d860;
+    border-color: #023019;
+    color: #6d6204;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.homepage .btn-warning:hover,
+.homepage .btn-warning:focus {
+    background-color: #ffe066;
+    border-color: #bfae2d;
+    color: #fff;
+    transform: scale(1.06);
+}
+.my-balloon-btn:hover, .my-balloon-btn:focus {
+    background-color: #db5757; 
+    border-color: #b2c4b3;
+    color: #fff;
+    transition: background-color 0.4s, border-color 0.4s;
+}
+/* General Button Hover Effect for All Pages */
+.btn, button, input[type="submit"], input[type="button"] {
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.btn:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover,
+.btn:focus, button:focus, input[type="submit"]:focus, input[type="button"]:focus {
+    filter: brightness(0.93);
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+/* Fun Hover Effect for Boxes */
 .fun-box {
     border-radius: 15px;
     transition: transform 0.3s ease-in-out;
@@ -5,6 +96,7 @@
 .fun-box:hover {
     transform: scale(1.1);
 }
+/* Animated Pop Effect */
 @keyframes pop {
     0% { transform: scale(0.8); opacity: 0; }
     100% { transform: scale(1); opacity: 1; }
@@ -12,24 +104,19 @@
 .animate-pop {
     animation: pop 1s ease-out;
 }
+/* Balloon Pop Animation */
+@keyframes pop-effect {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0); opacity: 0; }
+}
+.pop-animation {
+    animation: pop-effect 0.5s ease-out;
+}
+/* Center Text */
 .text-center {
     text-align: center;
 }
+/* Add Some Space */
 .mt-5 {
     margin-top: 50px;
-}
-body.home-page {
-    background-color: rgb(129, 223, 156);
-    color: black;
-}
-body.games-page {
-    background-color: rgb(129, 223, 156);
-    color: black;
-}
-body.music-page {
-    background-color: rgb(129, 223, 156);
-    color: black;
-}
-body.videos-page {
-    background-color: rgb(129, 223, 156);
 }
