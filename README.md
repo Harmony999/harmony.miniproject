@@ -1,2 +1,0 @@
-# harmony.miniproject
-mini project
